@@ -1,0 +1,396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.1">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Your Name - Personal Website&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>* {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Navigation */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>nav {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 1.5rem 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: sticky;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>z-index: 100;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 2px 10px rgba(0,0,0,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>nav ul {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>list-style: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>nav a {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #666;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0.8rem 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #f5f5f5;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: inline-flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>nav a:hover, nav a.active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #2563eb;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Hero Section */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.hero {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 4rem 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-height: 500px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.profile-pic-container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.profile-pic {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 200px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 200px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>object-fit: cover;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 4px solid #e5e7eb;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 12px rgba(0,0,0,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #f3f4f6;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.hero h1 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 3rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #111;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.hero p {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #666;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Sections */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>section {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 900px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 3rem auto;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>section.active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>section h2 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #2c3e50;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 3px solid #2563eb;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-bottom: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>section p {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #555;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* CV Specific Styles */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.cv-section {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 2.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.cv-section h3 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #2563eb;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-bottom: 0.3rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 2px solid #e5e7eb;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.cv-item {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-left: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-left: 3px solid #e5e7eb;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.cv-title {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #111;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 0.3rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.cv-institution {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #666;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 0.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.cv-date {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #999;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.95rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.cv-description {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #555;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* CV Section */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.cv-link {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 1rem 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #2563eb;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: background 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 500;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.cv-link:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #1d4ed8;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Research Section */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.research-item {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #f8f9fa;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-left: 4px solid #667eea;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.research-item h3 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #2c3e50;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Contact Section */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.contact-info {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #f8f9fa;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.contact-item {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.1rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.contact-item strong {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #667eea;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Footer */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>footer {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #2c3e50;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 3rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Responsive */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 768px) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.hero h1 {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>nav ul {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>gap: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>section {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>padding: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Navigation --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="#home" class="active"&gt;🏠 Home&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="#cv"&gt;📄 CV&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="#research"&gt;🔍 Research&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="#contact"&gt;✉️ Contact&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Hero Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="home" class="hero active"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="profile-pic-container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;img id="profilePic" src="profile.jpg" alt="Profile Picture" class="profile-pic"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;Your Name&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Your Title or Brief Description&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- CV Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="cv"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Curriculum Vitae&lt;/h2&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="cv-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Education&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="cv-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="cv-title"&gt;Ph.D. in Finance&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="cv-institution"&gt;Louisiana State University&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="cv-date"&gt;Expected 2026&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="cv-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="cv-title"&gt;M.S./B.A. in [Your Field]&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="cv-institution"&gt;[Your University]&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="cv-date"&gt;[Year]&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="cv-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Research Interests&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Corporate Finance, Asset Pricing, Financial Markets&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="cv-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Working Papers&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="cv-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="cv-title"&gt;Paper Title 1&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="cv-description"&gt;Brief description of your paper and its contribution.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="cv-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="cv-title"&gt;Paper Title 2&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="cv-description"&gt;Brief description of your paper and its contribution.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="cv-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Teaching Experience&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="cv-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="cv-title"&gt;Teaching Assistant - [Course Name]&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="cv-institution"&gt;Louisiana State University&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="cv-date"&gt;[Year]&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="cv-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Awards &amp; Honors&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="cv-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="cv-title"&gt;Award Name&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="cv-date"&gt;[Year]&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="cv.pdf" class="cv-link" download&gt;📄 Download Full CV (PDF)&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Research Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="research"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Research&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="research-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Research Paper Title 1&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Brief description of your research paper. This could include the main findings, methodology, or key contributions to the field.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="research-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Research Paper Title 2&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Brief description of your second research paper. Add more items as needed for your publications and working papers.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="research-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Working Paper Title&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Description of your work in progress or working papers.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Contact Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="contact"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Contact&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="contact-info"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="contact-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;strong&gt;Email:&lt;/strong&gt; your.email@lsu.edu</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="contact-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;strong&gt;Office:&lt;/strong&gt; Business Education Complex, Room XXX</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="contact-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;strong&gt;Address:&lt;/strong&gt; E.J. Ourso College of Business&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Louisiana State University&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Baton Rouge, LA 70803</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Footer --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;&amp;copy; 2025 Your Name. All rights reserved.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Navigation and section switching</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const navLinks = document.querySelectorAll('nav a[href^="#"]');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const sections = document.querySelectorAll('section');</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>navLinks.forEach(anchor =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>anchor.addEventListener('click', function (e) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>e.preventDefault();</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Remove active class from all links and sections</p>
+<p class="p1"><span class="Apple-converted-space">                </span>navLinks.forEach(link =&gt; link.classList.remove('active'));</p>
+<p class="p1"><span class="Apple-converted-space">                </span>sections.forEach(section =&gt; section.classList.remove('active'));</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Add active class to clicked link</p>
+<p class="p1"><span class="Apple-converted-space">                </span>this.classList.add('active');</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Show the target section</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const targetId = this.getAttribute('href');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const target = document.querySelector(targetId);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (target) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>target.classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>window.scrollTo({ top: 0, behavior: 'smooth' });</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
